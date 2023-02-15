@@ -9,13 +9,17 @@
       
       
       
+        <link rel="prev" href="../over/">
+      
+      
+        <link rel="next" href="../baseoss/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>Basicaccesperm - UEB Cluster Tech Overview</title>
+        <title>Nodes and roles - UEB Cluster Tech Overview</title>
       
     
     
@@ -63,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-access-and-security" class="md-skip">
+        <a href="#summary-of-nodes-roles-and-hardware" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basicaccesperm
+              Nodes and roles
             
           </span>
         </div>
@@ -180,10 +184,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="../nodeshard/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Nodes and roles
     </a>
   </li>
@@ -305,11 +311,86 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../nodeshard/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Nodes and roles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Nodes and roles
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    Roles
+  </a>
+  
+    <nav class="md-nav" aria-label="Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#master" class="md-nav__link">
+    Master
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute" class="md-nav__link">
+    Compute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    Storage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-summary" class="md-nav__link">
+    Hardware summary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -572,22 +653,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vpn" class="md-nav__link">
-    VPN
+  <a href="#roles" class="md-nav__link">
+    Roles
   </a>
+  
+    <nav class="md-nav" aria-label="Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#master" class="md-nav__link">
+    Master
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compute" class="md-nav__link">
+    Compute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    Storage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#user-permissions" class="md-nav__link">
-    User permissions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#network-ports" class="md-nav__link">
-    Network Ports
+  <a href="#hardware-summary" class="md-nav__link">
+    Hardware summary
   </a>
   
 </li>
@@ -608,13 +709,50 @@
 
 
 
-<h1 id="user-access-and-security">User access and security</h1>
-<h2 id="vpn">VPN</h2>
-<p>Connection through the institution's VPN is currenlty mandatory. For external users, please contact the administrators</p>
-<h2 id="user-permissions">User permissions</h2>
-<p>User will not be granted any kind of administrative permissions. For specific permissions not included in the standard sets, users are asked to contact the administrators</p>
-<h2 id="network-ports">Network Ports</h2>
-<p>Similarly, due to security reasosn, only network ports considered needed for regular operations in the cluster are open. For opening additional ports, users are asked to contact the administartors.</p>
+<h1 id="summary-of-nodes-roles-and-hardware">Summary of node's roles and hardware</h1>
+<h2 id="roles">Roles</h2>
+<h3 id="master">Master</h3>
+<p>In our case, this role includes:</p>
+<ul>
+<li>Cluster control and management</li>
+<li>Provision and orchestration</li>
+<li>Login</li>
+<li>Job and resource management</li>
+<li>Job submition</li>
+</ul>
+<h3 id="compute">Compute</h3>
+<p>Nodes with this role actually run the jobs assigned by SLURM. There are specific nodes for CPU and for GPGPU computing.</p>
+<h3 id="storage">Storage</h3>
+<p>In our case, it provides the shared storage resources that contain user related data (home) and immediate computing jobs data (scratch)</p>
+<h2 id="hardware-summary">Hardware summary</h2>
+<p><em>Node name: avicenna
+</em><em>Cluster role: Master
+</em><em>CPU: AMD Epyc
+</em><strong>Cores/Threads (total): 16/32
+</strong>RAM: 128GB
+<strong>Network links
+</strong><em>BMC (VHIR)
+</em><strong>External Acess (VHIR)
+</strong>*Internal</p>
+<p><em>Node Name: c01
+</em><em>Cluster role: Compute
+</em><strong>Type: CPU
+</strong>CPU: AMD Epyc x2
+<strong><em>Cores/Threads (total): 32/64
+</em>*RAM: 512GB
+</strong>Network links
+<strong><em>BMC (VHIR)
+</em></strong>Internal</p>
+<p><em>Node Name: g01
+</em><em>Cluster role: Compute
+</em><strong>Type: GPGPU
+</strong>CPU: AMD Epyc x2
+<strong><em>Cores/Threads (total): 24
+</em>*GPU: Ampere x 2 (24GB VRAM)
+</strong>RAM: 512GB
+<strong>Network links
+</strong><em>BMC (VHIR)
+</em>**Internal</p>
 
 
 
