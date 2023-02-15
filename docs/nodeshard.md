@@ -22,32 +22,32 @@ In our case, it provides the shared storage resources that contain user related 
 ##Hardware summary
 
 * Node name: avicenna
-** Cluster role: Master
-** CPU: AMD Epyc
-*** Cores/Threads (total): 16/32
-** RAM: 128GB
-** Network links
-*** BMC (VHIR)
-*** External Acess (VHIR)
-*** Internal
+	* Cluster role: Master
+	* CPU: AMD Epyc
+		* Cores/Threads (total): 16/32
+	* RAM: 128GB
+	* Network links
+		* BMC (VHIR)
+		* External Acess (VHIR)
+		* Internal
 
 * Node Name: c01
-** Cluster role: Compute
-*** Type: CPU
-** CPU: AMD Epyc x2
-*** Cores/Threads (total): 32/64
-** RAM: 512GB
-** Network links
-*** BMC (VHIR)
-*** Internal
+	* Cluster role: Compute
+		* Type: CPU
+	* CPU: AMD Epyc x2
+		* Cores/Threads (total): 32/64
+	* RAM: 512GB
+	* Network links
+		* BMC (VHIR)
+		* Internal
 
 * Node Name: g01
-** Cluster role: Compute
-*** Type: GPGPU
-** CPU: AMD Epyc x2
-*** Cores/Threads (total): 24
-** GPU: Ampere x 2 (24GB VRAM)
-** RAM: 512GB
-** Network links
-*** BMC (VHIR)
-*** Internal
+	* Cluster role: Compute
+		* Type: GPGPU
+	* CPU: AMD Epyc x2
+		* Cores/Threads (total): 24
+	* GPU: Ampere x 2 (24GB VRAM)
+	* RAM: 512GB
+	* Network links
+		* BMC (VHIR)
+		* Internal
