@@ -12,4 +12,4 @@ ALso, recent versions of Python, R, Perl, Java and other runtimes and developmen
 
 ##Environment Modules
 
-The lmod implementation of Environment Modules is available. Users are instucted and strongly advised to use this system for running computing tasks on the cluster.
+The lmod implementation of Environment Modules is available. Users are instructed and strongly advised to use this system for submitting computing tasks on the cluster.
