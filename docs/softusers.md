@@ -1,4 +1,4 @@
-# #System-wide installed software
+#System-wide installed software
 
 ##Binaries, libraries and runtimes
 
