@@ -1,3 +1,37 @@
-site_name: UEB's Cluster Tech Overview
+site_name: UEB Cluster Tech Overview
 theme:
   name: material
+  icon:
+    logo: material/server 
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - header.autohide
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search:
+      lang: en
+
+nav:
+    - Home: index.md
+    - General Overview: over.md
+    - Nodes and roles: nodeshard.md
+    - Cluster setup and management: setup.md
+    - Users Overview: users.md
+    - Software available: softusers.md
