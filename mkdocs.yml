@@ -32,14 +32,15 @@ nav:
     - Home: index.md
     - General Overview: over.md
     - Nodes and roles: nodeshard.md
-    - Cluster setup and management: setup.md
+    - Cluster setup and management:
       - Base OSs: baseoss.md
       - Specific repos: openhpc.md
       - Cluster Provisioning and management: management.md
       - Task and resource management: slurm.md
       - Shared storage: sharedsto.md 
-    - Users Overview: users.md
+    - Users Overview: 
       - Access and basic permissions: basicaccessperm.md
       - User base: userbase.md
-    - Software available to users: softusers.md
+    - Software available to users:
+      - System-wide: softusers.md
       - Singularity runtime: singularity.md
